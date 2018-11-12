@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Михаил Головкин](https://up.htmlacademy.ru/htmlcss/23/user/863507).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Шабельников](https://htmlacademy.ru/profile/artyglitch).
 
 ---
 
