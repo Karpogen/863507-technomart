@@ -3,14 +3,128 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <a href="index.html" class="logo">техномарт</a>
-      <input type="search" name="Поиск">
-    </header>
+      <header class="main-header">
+        <a href="index.html" class="main-header-logo">ТЕХНОМАРТ</a>
+        <form class="">
+          <button class="search-btn" type="submit"></button>
+          <input type="text" placeholder="Поиск:">  
+        </form>
+        <ul class="header-list">
+           <li><a href="#" class="bookmarks">Закладки:</a></li>
+           <li><a href="#" class="cart">Корзина:</a></li>
+        </ul>
+        <a href="#" class="order-registration">Оформить заказ</a>  
+        <h1 class="title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+        <h2 class="visually-hidden">Контактная информация</h2>
+        <address>
+        <a href="tel:">+7 (812) 555-05-55</a>
+        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
+        </address>
+        <ul class="user-navigation">
+<!-- Заменил ссылки "Вход" и "Регистрация" на "Мои заказы" и "Личный кабинет", добавил поле идндификатора покупателя -->          
+          <li class="account"><a href="#"></a></li>
+          <li class="client-orders"><a href="#">Мои заказы</a></li>
+          <li class="pesonal-account"><a href="#">Личный кабинет</a></li>
+        </ul>
+        <nav class="main-navigation">
+          <h2 class="visually-hidden">Разделы сайта</h2>
+          <ul class="site-navigation">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="#">Компания</a></li>
+            <li class="site-navigation-current"><a href="catalog.html">Каталог</a></li> <!-- Добывил класс class="site-navigation-current"-->
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Спецпредложения</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="page-content">
+          <ul class="breadcrumbs">
+            <li><a href="index.html"><img src="img/index-logo.svg" alt="Главная"></a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="#">Инструмент</a></li>
+            <li class="breadcrumbs-current">Перфораторы</li>    
+          </ul>  
+        <h2 class="page-title">ПЕРФОРАТОРЫ</h2>
+        <section class="filters">
+            <h3 class="visually-hidden">Фильтр товаров</h3>
+            <!-- Здесь будет форма -->
+        </section>
 
-
-
+        <section class="catalog">
+            <h3 class="visually-hidden">ПЕРФОРАТОРЫ</h3>
+            <ul class="catalog-list">
+              <li class="catalog-item">
+                <h3>
+                  <a href="catalog-item.html">
+                  <span class="catalog-category">Перфоратор</span>
+                  <span class="catalog-item-title">BOSH BFG 3000</span>
+                  </a>
+                </h3>
+                <p class="catalog-item">
+                  <a href="catalog-item.html">
+                    <img src="img/product-1.jpg" width="220" height="165" alt="Перфоратор BOSH BFG 3000">
+                  </a>
+                </p>
+                <p class="catalog-item-price">
+                  <del>22500 ₽</del>
+                  <b>15500 ₽</b>
+                  <a class="button" href="#">Купить</a>
+                  <a class="button" href="#">В закладки</a>
+                </p>
+               <!-- Остальные карточки товаров --> 
+            </ul>
+            <ul class="pagination-list">
+                <li class="pagination-item pagination-item-current"><a>1</a></li>
+                <li class="pagination-item"><a href="#">2</a></li>
+                <li class="pagination-item"><a href="#">3</a></li>
+                <li class="pagination-next"><a href="#">Следующая</a></li> <!-- Думаю про нумерацию объяснят потом, просто добавил её-->
+              </ul>  
+        </section>   
+        <section> <!--Может тут можно использовать <article>-->
+          <h2>Пара слов о Перфораторах </h2>
+        </section>     
+      </main>
+      <footer class="main-footer">
+          <section class="bottom-navigation">
+              <p><a href="index.html" class="main-header-logo">ТЕХНОМАРТ</a></p>
+              <p>г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
+              <nav class="main-navigation">
+                  <ul class="site-navigation">
+                    <li><a href="#">Компания</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Материалы</a></li>
+                    <li><a href="#">Техника</a></li>
+                    <li><a href="#">Инструмент</a></li>
+                    <li><a href="#">Спецпредложения</a></li>
+                  </ul>
+                </nav>
+          </section>
+          <p class="footer-contacts">&copy;2010-2017 Компания &laquo;Техномарт&raquo;<br>
+            Все права защищены</p>
+          <ul class="footer-social">
+            <li><a class="social-button" href="#">Вконтакте</a></li>
+            <li><a class="social-button" href="#">Фэйсбук</a></li>
+            <li><a class="social-button" href="#">Инстаграм</a></li>
+          </ul>  
+          <p>Обратная связть:<br>
+          <a href="malito:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+          <p>Разработано<br>
+          <a href="http://htmlacademy.ru">htmlacademy.ru</a></p>
+        </footer>
+        <!--Это пока не нужно:
+          <section class="modal modal-login">
+            <h2>Личный кабинет</h2>
+            <p>Введите свой логин и пароль.</p>
+                Здесь будет форма 
+            <span class="modal-close">x</span>
+          </section> --> 
   </body>
-</html>
+</html>    
