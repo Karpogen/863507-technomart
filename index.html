@@ -8,29 +8,37 @@
   <body>
     <header class="main-header">
       <!-- Логотип можно оформить просто текстом, картинку не обязательно вставлять -->
-      <a class="main-header-logo"><img src="img/index-logo.svg" alt="Логотип интернет-магазина Техномарт"></a>
+      <!-- Убрал картинку, указала логотип просто текстом-->
+      <a class="main-header-logo">ТЕХНОМАРТ</a>
       <form class="">
         <!-- Всё окей, только кнопке надо было дать класс, плюс надо добавить описание кнопке, т.е внутри неё надо написать, что это Поиск по сайту, но с формами пока не торопимся -->
-        <button type="submit"></button>
+        <!-- ДОбавил кнопке поиска класс "search-btn" и альтернативный текст кнопке не понял как сделать-->
+        <button class="search-btn" type="submit"></button>
         <input type="text" placeholder="Поиск:">  
       </form>
       <!-- Закладки и корзину можно формить как список, output убери, он не нужен. -->
-      <a href="#" class="bookmarks">Закладки:<output name="number-of-bookmarks" > 0</output></a>
-      <a href="#" class="cart">Корзина:<output name="the-cart" > 0</output></a>
+      <!--Оформил закладку и корзину как список с классом "header-list".  Поле "Оформить заказ" оставил вне списка просто как ссылку, output убрал-->
+      <ul class="header-list">
+         <li><a href="#" class="bookmarks">Закладки:</a></li>
+         <li><a href="#" class="cart">Корзина:</a></li>
+      </ul>
       <a href="#" class="order-registration">Оформить заказ</a>  
       <h1 class="title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
       <!-- Заголовок телефон убирай, вместо него ставится просто ссылка с номером телефона, и атрибутом href="tel:" -->
-      <h2 class="visually-hidden">Телефон</h2>
-      <p>+7 (812) 555-05-55</p>
       <!-- Адрес можно обвернуть в параграф, а вообще это блок с основной контактной информацией, так что тут можно использовать тег address, внутри ссылка с телефоном и параграф с адресом -->
-      <h2 class="visually-hidden">Адрес</h2>
+      <!--Убрал заголовок телефона, вместо него поставил ссылку с атрибутом href="tel: и номером телефона и обренул всё это в тег adress? оставил скрытый заголовк "Контактная информация"-->
+      <h2 class="visually-hidden">Контактная информация</h2>
+      <address>
+      <a href="tel:">+7 (812) 555-05-55</a>
       <p>г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
+      </address>
       <ul class="user-navigation">
         <li class="login-link"><a href="#">Вход</a></li>
         <li class="registration"><a href="#">Регистрация</a></li>
       </ul>
       <nav class="main-navigation">
         <!-- Заголовок не нужен -->
+        <!-- Убрал заголовок <h2 class="visually-hidden">Разделы сайта</h2>-->
         <h2 class="visually-hidden">Разделы сайта</h2>
         <ul class="site-navigation">
           <li><a href="index.html">Главная</a></li>
@@ -44,11 +52,12 @@
       </nav>
     </header>
     <!-- Класс container лучше использовать для блока, который будет выполнять роль центровщика, для main более подходящий класс .page-content -->
-    <main class="container">
+    <!-- Заменил класс у тега main на class="page-content" -->
+    <main class="page-content">
       <section class="company">
-        <h2 class="visually-hidden">Данные о компании</h2>
         <!-- h3 заголовок убрать, у тебя есть h2. и в h2 можно записать Компания "Техномарт" -->
-        <h3>КОМПАНИЯ &laquo;ТЕХНОМАРТ&raquo;</h3>
+        <!-- Убрал скрытый заголовок class="visually-hidden" "Данные о компании", вместо него вставил в h2 текст КОМПАНИЯ ТЕХНОМАРТ -->
+        <h2>КОМПАНИЯ &laquo;ТЕХНОМАРТ&raquo;</h2>
         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br>
           строительства не оставит равнодушными любителей сэкономить на гастарбатерах.</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки России! <br>
@@ -65,14 +74,18 @@
         <h2>КОНТАКТЫ</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
         <!-- Картинкам обязательно прописывать атрибуты ширины и высоты -->
-        <img src="img/map.svg" alt="местонахождения офиса на карте">
+        <!-- Прописал атрибуты ширины и высоты картинкам. Не делал это умышленно, так как еще нет никаких реальных картинок и не знаю какие размеры им задавать по умолчанию-->
+        <img src="img/map.svg" width="111" height="24" alt="местонахождения офиса на карте">
         <p><a href="#" class="button-lvl-2">заблудились? напишите нам!</a></p>
       </section>
+      </main>
       <!-- Здесь должен уже быть footer, он содержит две менюшки -->
+      <!-- Расширил область footer, вклчив в него section class="bottom-navigation"-->
+      <footer class="main-footer">
       <section class="bottom-navigation">
           <!-- h2 лишний -->
-          <h2 class="visually-hidden">Разделы сайта</h2>
-          <p><a href="index.html" class="main-header-logo"><img src="img/index-logo.svg" alt="Логотип интернет-магазина Техномарт"></a></p>
+          <!-- Убрал h2 class="visually-hidden">Разделы сайта -->
+          <p><a href="index.html" class="main-header-logo">ТЕХНОМАРТ</a></p>
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
           <nav class="main-navigation">
               <ul class="site-navigation">
@@ -88,8 +101,6 @@
               </ul>
             </nav>
       </section>
-    </main>
-    <footer class="main-footer">
       <p class="footer-contacts">&copy;2010-2017 Компания &laquo;Техномарт&raquo;<br>
         Все права защищены</p>
       <ul class="footer-social">
