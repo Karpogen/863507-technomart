@@ -8,8 +8,8 @@
   <body>
       <header class="page-header">
         <a href="index.html" class="page-header-logo">ТЕХНОМАРТ</a>
-        <form class="">
-          <button class="search-btn" type="submit"></button>
+        <form class="search" method="GET" action="https://echo.htmlacademy.ru">
+          <button class="search-btn" type="submit">Поиск</button>
           <input type="text" placeholder="Поиск:">  
         </form>
         <ul class="header-list">
@@ -50,7 +50,59 @@
         <h2 class="page-title">ПЕРФОРАТОРЫ</h2>
         <section class="filters">
             <h3 class="visually-hidden">Фильтр товаров</h3>
-            <!-- Здесь будет форма -->
+            <h3>сортировка:</h3>
+            <a href="#" class="sorting_by_price">по цене</a>
+            <a href="#" class="sorting_by type">по типу</a>
+            <a href="#" class="sorting_by_functionality">по функционалу</a>
+            <button class="sorting_up" type="button">Сначала дешевые</button>
+            <button class="sorting_down" type="button">Сначала дорогие</button>
+            <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
+              <fieldset>
+                <legend>производители:</legend>
+                <ul>
+                  <li class="filter-option">
+                    <input class="filter-input filter-input-checkbox" 
+                    type="checkbox" name="bosch" id="filter_bosch">
+                    <label for="filter_bosch">bosch</label>
+                  </li>
+                  <li class="filter-option">
+                      <input class="filter-input filter-input-checkbox" 
+                      type="checkbox" name="интерскол" id="filter_interskol">
+                      <label for="filter_interskol">интерскол</label>
+                  </li>
+                  <li class="filter-option">
+                      <input class="filter-input filter-input-checkbox" 
+                      type="checkbox" name="makita" id="filter_makita">
+                      <label for="filter_makita">makita</label>
+                  </li>   
+                  <li class="filter-option">
+                      <input class="filter-input filter-input-checkbox" 
+                      type="checkbox" name="dewalt" id="filter_dewalt">
+                      <label for="filter_dewalt">dewalt</label>
+                  </li>
+                  <li class="filter-option">
+                      <input class="filter-input filter-input-checkbox" 
+                      type="checkbox" name="hitachi" id="filter_hitachi">
+                      <label for="filter_hitachi">hitachi</label>
+                  </li>               
+                </ul>
+              </fieldset>
+              <fieldset>
+                <legend>питание</legend>
+                <ul>
+                  <li class="filter-option">
+                    <input class="filter-input filter-input-radio" type="radio" value="rechargeable" name="product_group" id="filter_rechargeable">
+                  <label for="filter_rechargeable">аккумуляторные</label>
+                  </li>
+                  <li class="filter-option">
+                      <input class="filter-input filter-input-radio" type="radio" value="mains" name="product_group" id="filter_mains">
+                    <label for="filter_mains">сетевые</label>
+                  </li>
+
+                </ul>
+              </fieldset>
+            </form>
+
         </section>
 
         <section class="catalog">
@@ -272,7 +324,16 @@
           <p>Разработано<br>
           <a href="http://htmlacademy.ru">htmlacademy.ru</a></p>
         </footer>
-        <!--Это пока не нужно:
+        
+        <section class="modal modal_goods_in_basket">
+          <form class="goods_in_basket" action="https://echo.htmlacademy.ru" method="post">
+            <h2>товар добавлен в корзину!</h2>
+            <a href="#">оформить заказ</a>
+            <a href="#">продолжить покупки</a>
+          </form>
+          <button class="modal_close" type="button">Закрыть</button>  
+        </section>
+                <!--Это пока не нужно:
           <section class="modal modal-login">
             <h2>Личный кабинет</h2>
             <p>Введите свой логин и пароль.</p>

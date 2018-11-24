@@ -8,7 +8,7 @@
   <body>
     <header class="page-header">
       <a class="page-header-logo">Техномарт</a>
-      <form class="">
+      <form class="" action="https://echo.htmlacademy.ru" method="post">
         <button class="search-btn" type="submit">Поиск</button>
         <input type="text" placeholder="Поиск:">  
       </form>
@@ -24,8 +24,8 @@
       <p>г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
       </address>
       <ul class="user-navigation">
-        <li class="login-link"><a href="#">Вход</a></li>
-        <li class="registration"><a href="#">Регистрация</a></li>
+        <li class="login-link"><a href="login.html">Вход</a></li>
+        <li class="registration"><a href="registration.html">Регистрация</a></li>
       </ul>
       <nav class="main-navigation">
         <ul class="site-navigation">
@@ -40,6 +40,55 @@
       </nav>
     </header>
     <main class="page-content">
+      <!--Накидал содержание для блока-->
+      <section class="group">
+        <ul class="group-list">
+          <li>
+            <p class="group-unit">Материалы
+              <a href="#">на любой вкус</a>
+            </p>
+          </li>  
+          <li>  
+            <p class="group-unit">Инструмент
+                <a href="#">на все случаи</a></li>
+            </p>
+          </li>  
+          <li>  
+              <p class="group-unit">Техника
+                  <a href="#">для стройки</a></li>
+              </p>
+          </li>  
+          <li>  
+              <p class="group-unit">Скидка 50%
+                  <a href="#">на 350 товаров</a></li>
+              </p>
+          </li>
+          <li>  
+              <p class="group-unit">Доставка
+                  <a href="#">бесплатно</a></li>
+              </p>
+          </li>  
+        </ul>
+        <!-- Конец блока-->
+        <!--Накидал содержание для слайдера-->
+        <div class="slider">
+          <figure class="slider-content">
+            <p>перфораторы</p>
+            <p>Настоящие мужские игрушки</p>
+            <img src="img/background/photo_perforator.jpg" width="620" height="266" alt="фото перфоратора">    
+          </figure>
+          <ul class="buttons-icon">
+            <li><button class="button-left"><img src="img/icon/icon-left.svg" width="22" height="40" alt="Кнопка влево" ></button></li>
+            <li><button class="button-right"><img src="img/icon/icon-right.svg" width="22" height="40" alt="Кнопка влево" ></button></li>
+          </ul>
+          <ul class="buttons-slider">
+              <li><button class="button-dots"><img src="img/icon/slider dots.png" width="10" height="10" alt="слайдер" ></button></li>
+              <li><button class="button-dots"><img src="img/icon/slider dots.png" width="10" height="10" alt="слайдер" ></button></li>
+            </ul>
+          <a href="catalog.html">открыть каталог</a>
+        </div>
+        <!-- Окончание слайдера-->
+      </section>
       <article class="company">
         <header class="company-head">
           <h2>КОМПАНИЯ &laquo;ТЕХНОМАРТ&raquo;</h2>
@@ -60,7 +109,7 @@
           <h2>контакты</h2>
         </header>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-        <img src="img/map.svg" width="111" height="24" alt="местонахождения офиса на карте">
+        <a href="img/background/map.jpg"><img src="img/background/mini_map.png" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8"></a>
         <p><a href="#" class="button">заблудились? напишите нам!</a></p>
       </section>
       </main>
@@ -96,5 +145,32 @@
       <p>Разработано<br>
       <a href="http://htmlacademy.ru">htmlacademy.ru</a></p>
     </footer>
-  </body>
+
+  <section class="modal modal_write_us">
+    <h2 class="visually-hidden">Напишите нам</h2>
+      <form class="write_us_form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="write_us_name">по цене</label>
+          <input class="write_us_name" id="write_us_name" name="name" type="text" placeholder="Имя Фамилия">
+        </p>
+        <p>  
+          <label for="write_us_e-mail">по типу</label>
+          <input class="write_us_e-mail" id="write_us_e-mail" name="e-mail" type="email" placeholder="email@example.com">
+        </p>
+        <p> 
+          <label for="write_us_text">по функционалу</label>
+          <input class="write_us_text" id="write_us_text" name="text" type="text" placeholder="В свободной форме">
+        </p>
+        <button type="submit">отправить</button>
+      </form>
+      <button class="modal_close" type="button">Закрыть</button>
+  </section>
+  <section class="modal modal_map">
+    <h3 class="visually-hidden">Как до нас добраться</h3>
+    <p>
+      <img src="img/background/map.jpg" width="970" height="476" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8">
+    </p>  
+    <button class="modal_close" type="button">Закрыть</button>
+  </section>
+</body>
 </html>
