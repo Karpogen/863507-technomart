@@ -1,0 +1,479 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.page_header {
+    background-color: #f1f5f7;
+}
+
+.logo {
+    display: block;
+    background-color: #ee3643;
+    font-family: 'Cuprum', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center; 
+    box-shadow: 0px 5px 0 0 #b52933; 
+}
+.logo:focus,
+.logo:hover {
+    background-color: #ca2c37;
+    box-shadow: 0px 5px 0 0 #9a212a;
+}
+.logo:active {
+    background-color: #ba2732;
+    box-shadow: 0px 5px 0 0 #8e1e26;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.first_part_header {
+    background-color: #293449;
+}
+
+.search_field button {
+    color: #ffffff;
+    font-family: 'Cuprum', Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 18px;
+    background-color: #293449;
+}
+.search_field:focus,
+.search_field:hover {
+    background-color: #212a3a;
+}
+/* Не знаю как сделать изменения при "курсор в поле поиска"(:active) (шрифт становится черный, поле поиска белым) */
+
+.header_list {
+    color: rgb(255, 255, 255);
+    font-family: 'Cuprum', Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 18px;
+    background-color: #293449;
+}
+.header_list a:focus,
+.header_list a:hover {
+    background-color: #212a3a;
+}
+.header_list a:active {
+    background-color: #161d29;
+    color: rgb(255, 255, 255, 0.6);
+}
+
+.order_registration {
+    color: rgb(255, 255, 255);
+    font-family: 'Cuprum', Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 18px;
+    background-color: #63a63e;
+}
+.order_registration:focus,
+.order_registration:hover {
+    background-color: #5fbb2d;
+}
+.order_registration:active {
+    background-color: #518534;
+    color: rgb(255, 255, 255, 0.6);
+}
+
+ul {
+    list-style: none;
+}
+
+.title {
+    color: #ee3643;
+    font-family: 'Cuprum', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 23px;
+}
+
+.telefon {
+    border: 3px solid #ffffff;
+}
+.telefon a {
+    color: #e9292a;
+    font-family: 'Cuprum', Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.42px;
+}
+
+address {
+    color: #32425c;
+    font-family: 'Cuprum', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}    
+    /* font-style: normal; Почему-то не менят стиль шрифта (скорее всего из-за того что находится в теге адресс, что делать?*/
+
+.user_navigation a {
+    color: rgb(0, 0, 0);
+    font-family: 'Cuprum', Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 21px;
+    background-color: #ffffff;
+}    
+.user_navigation a:focus,
+.user_navigation a:hover {
+    color: #ee3643;
+}
+.user_navigation a:active {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0, 0.3);
+}
+
+.main_navigation {
+    color: #ffffff;
+    font-family: 'Cuprum', Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 17px;
+    background-color: #32425c;
+    box-shadow: inset 0 -5px 0 #293449;
+}
+.main_navigation li:focus,
+.main_navigation li:hover {
+    background-color: #293449;
+}
+.main_navigation a:active {
+    background-color: #1d2739;
+    color: rgb(255, 255, 255, 0.5);
+}
+
+.company h2 {
+    color: #000000;
+    font-family: 'Cuprum', Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.company p {
+    color: #000000;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.company ul {
+    color: #000000;
+    font-family: 'Cuprum', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+
+}
+
+.button {
+    color: #ffffff;
+    font-family: 'Cuprum', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+    background-color: #ee3643;
+    text-align: center;
+}
+.button:focus,
+.button:hover {
+    background-color: #ca2c37;
+}
+.button:active {
+    background-color: #ba2732;
+}
+
+.contacts h2 {
+    color: #000000;
+    font-family: 'Cuprum', Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.contacts p {
+    color: #000000;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.logo_buttom {
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.bottom_navigation {
+    background-color: #32425c;
+}
+
+.bottom_navigation p {
+    color: #f1f5f7;
+    font-family: 'Cuprum', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.main_navigation_buttom a {
+    color: #f1f5f7;
+    font-family: 'Cuprum', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.catalog_navigation a {
+    color: #ffd180;
+}
+.main_navigation_buttom li:focus,
+.main_navigation_buttom li:hover {
+    text-decoration-line: underline;
+}
+.main_navigation_buttom a:active {
+    color: rgb(255, 255, 255, 0.5);
+}
+.catalog_navigation a:active {
+    color: rgb(255, 209, 128, 0.5);
+}
+
+.footer_bottom {
+    background-color: #293449;
+}
+
+.footer_contacts {
+    color: #ffffff;
+    font-family: 'Cuprum', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.footer_social li {
+    background-color: #212a3a;
+}
+.footer_social li:focus,
+.footer_social li:hover {
+    background-color: #ee3643;
+}
+
+.footer_social a:active {
+    background-color: #ee3643;
+}
+
+.footer_bottom {
+    font-family: 'Cuprum', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #ffffff;
+}
+.email a{
+color: #ffd180;
+font-family: 'Cuprum', Arial, Helvetica, sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 18px;
+}
+.email a:focus,
+.email a:hover {
+    text-decoration: underline;
+}
+.email a:active {
+    color: #ee3643;
+    text-decoration: none;
+}
+
+
+/* Стили для catalog.html */
+.user_navigation .account a:focus,
+.user_navigation .account a:hover {
+    color: rgb(0, 0, 0);
+}
+.user_navigation .account a:active {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0, 0.3);
+}
+
+.user_navigation .personal a {
+    color: #ee3643;
+    font-family: 'Cuprum', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: underline;
+    color: #32425c;
+}
+.user_navigation .personal a:focus,
+.user_navigation .personal a:hover {
+    color: #ee3643;
+}
+.user_navigation .personal a:active {
+    color: rgb(0, 0, 0, 0.3);
+}
+
+.breadcrumbs a {
+    color: #000000;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.page_title {
+    color: #32425c;
+    font-family: 'Cuprum', Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+    background-color: #f2f6f8;
+}
+
+.label {
+    color: #000000;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.label legend {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.power {
+    color: #000000;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.power legend {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.05px;
+}
+
+.button_filter {
+    color: #000000;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: center; 
+}
+
+.catalog_list span {
+    color: #000000;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.catalog_list b {
+    color: #ffffff;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 18px;
+    text-transform: uppercase;
+    background-color: #ee3643;
+}
+
+.catalog_list del {
+    color: #999999;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 18px;
+    text-decoration: line-through;
+    text-transform: uppercase;
+}
+
+.catalog_list .button{
+    color: #ffffff;
+    font-family: 'Cuprum', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center; 
+    text-transform: uppercase;
+    box-shadow: inset 0 -3px 0 #367315;
+    background-color: #63a63e;
+}
+.catalog_list .button:focus,
+.catalog_list .button:hover {
+    background-color: #5fbb2d;
+}
+.catalog_list .button:active {
+    background-color: #518534;
+}
+
+.btn_bookmark {
+    color: #32425c;
+    font-family: 'Cuprum', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+    border: 3px solid #63a63e;
+}
+.btn_bookmark:focus,
+.btn_bookmark:hover {
+    border: 3px solid #32425c;
+}
+.btn_bookmark:active {
+    border: 3px solid #32425c;
+    opacity: 0.3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+
+    background-color: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.main-navigation,
+.first_part_header,
+.bottom-navigation {
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+
+    background-color: #4682B4;
+}
+
+.footer_bottom,
+.first_part_header {
+    background-color: #0000CD;
+}
+
+
+.page-header-logo,
+.main-header-logo {
+    background-color: #FF0000;
+    
+}
+
+.page_header {
+    background-color: #DCDCDC;
+} 
+
+.title,
+address a {
+    color: #FF0000;
+}
+
+address p {
+    color: #4682b4;
+}
+
+.user-navigation a{
+    color: #000000;
+}
+.user-navigation a:hover {
+    color: rgb(178, 34, 34);
+}
+.user-navigation a:focus {
+    color: rgb(165, 37, 37);
+}
+.user-navigation a:active {
+    color: rgb(148, 148, 148);
+}
+
+.user-navigation .account a:hover,
+.user-navigation .account a:focus {
+    color: #000000;   
+}
+.user-navigation .account a:active {
+    color: rgb(148, 148, 148);
+}    
+
+ul {
+    list-style: none;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    background-color: #0000CD;
+}
+
+.page-header-logo:hover,
+.search_field:hover,
+.header-list a:hover {
+    background-color: #708090;
+}
+
+.page-header-logo:focus,
+.search_field:focus,
+.header-list a:focus,
+.order-registration:focus {
+    background-color: #383838;
+}
+
+.order-registration {
+    background-color: darkgreen;
+}
+.order-registration:hover {
+    background-color: #45bb00ef;
+}
+.order-registration:focus,
+.order-registration:active {
+    background-color: #3e4b37ef;
+}
+
+.button,
+.btn_bookmark {
+    font: inherit;
+
+    text-align: center;
+    color: #FFFFFF;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    background-color: #FF0000;
+    border: none;
+}
+
+.catalog-item-price .button {
+    background-color: green;
+}
+
+.catalog-item-price .button:hover {
+    background-color: lawngreen;
+}
+.catalog-item-price .button:focus,
+.catalog-item-price .button:active {
+    background-color: darkgreen;
+}
+
+.button:hover {
+    background-color: #a80000;
+}
+
+.button:focus,
+.button:active {
+    background-color: #360202;
+}
+
+.btn_bookmark  {
+    border: chartreuse solid 2px;
+    background-color: #ffffff;
+    color: inherit;
+}
+
+.btn_bookmark:hover {
+    color: #011fa9;
+    border: #011fa9 solid 2px;
+}
+
+.btn_bookmark:focus,
+.btn_bookmark:active {
+    color: #979799;
+    border: #b1b4be solid 2px;
+}
+
+.page-title {
+    background-color: #708090;
+}
+
+.catalog-navigation a {
+    color: #ffff00;
+}
+
+.footer_bottom {
+    background-color: #011fa9;
+}
+
+.page-header-logo,
+.main-header-logo {
+    font-family: Cuprum;
+    font-size: 24.5px;
+    line-height: 24.5px;
+    color: #ffffff;
+}
+/* Не знаю как сделать что бы слово поиск было не серым а белым */
+.search_field input[placeholder] {
+    font-family: Cuprum;
+    font-size: 17px;
+    line-height: 18px;
+    color: #ffffff;
+
+    background-color: #011fa9;
+}
